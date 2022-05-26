@@ -1,0 +1,139 @@
+.man-hinh {
+    box-shadow: 5px 62px 68px 72px rgb(255 255 255 / 90%);
+}
+.ghe {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px 10px;
+    background-color: rgb(123, 122, 122);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    @include max(1740px){
+        margin: 7px 9px;
+        }
+    @include max(1660px){
+        width: 26px;
+    height: 25px;
+    margin: 7px 8px;
+    }
+    @include max(1468px){
+    margin: 7px 6px;
+    }
+    @include max(1349px){
+        width: 25px;
+        height: 21px;
+        margin: 6px 6px;
+    }
+     @include max(1308px){
+            width: 21px;
+            margin: 6px 7px;
+    }
+    @include max(1242px){
+        width: 21px;
+        margin: 6px 6px;
+    }
+    @include max(1179px){
+        width: 21px;
+        margin: 6px 5px;
+    }
+   
+    @include max(1115px){
+        width: 19px ;
+        margin: 6px 4px ;
+    }
+    @include max(1023px){
+        width: 23px ;
+        margin: 6px 6px ;
+    }
+    @include max(955px){
+        width: 22px ;
+        margin: 6px 5px ;
+    }
+    @include max(883px){
+        width: 19px;
+        margin: 6px 4px;;
+    }
+    @include max(767px){
+        width: 25px;
+        margin: 6px 7px ;
+    }
+    @include max(700px){
+        width: 22px;
+    }
+    @include max(648px){
+        width: 20px;
+        margin: 6px 6px ;
+    }
+    @include max(578px){
+        width: 19px;
+        margin: 4px 4px
+    }
+    @include max(491px){
+        width: 18px;
+        margin: 4px 3px;
+        font-size:10px;
+    }
+    @include max(438px){
+        width: 18px;
+        margin: 4px 2px;
+    }
+    @include max(403px){
+        width: 18px;
+        margin: 4px 1px;
+    }
+    @include max(360px){
+        width: 17px;
+        margin: 4px 1px;
+        font-size:8px;
+
+    }
+   
+}
+
+.gheDaDat {
+    cursor: no-drop !important;
+    .anticon {
+        font-size: 20px;
+        color: rgb(255, 61, 61);
+    }
+}
+
+
+.gheDangDat {
+    background-color: rgb(89, 222, 89) !important;
+    
+    .anticon {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.gheVip {
+    background-color: #f8c059;
+}
+.gheDangCoNguoiDat {
+    background-color:#1B9CFC;
+    cursor: no-drop !important;
+    .anticon {
+        font-size: 20px;
+    }
+}
+.checkout_info{
+    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%);
+}
+.checkout-btn{
+    cursor: no-drop !important;
+}
+.detail-main{
+    @include max(767px){
+        padding: 0!important;
+        .ant-tabs-tab{
+            font-size:10px;
+        }
+    }
+    
+}

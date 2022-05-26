@@ -1,0 +1,21 @@
+.slick-dots-bottom {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ant-carousel .slick-dots-bottom {
+    bottom: 63px !important;
+
+    @include max(767px) {
+        bottom: 12px !important;
+    }
+}
+
+.slick-dots li button:before {
+    color: transparent !important;
+}
+ 
+#carousel{
+    margin-top: 120px !important;
+    margin-bottom: 100px !important;
+}

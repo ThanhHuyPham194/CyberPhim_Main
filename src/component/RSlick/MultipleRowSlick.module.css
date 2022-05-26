@@ -1,0 +1,48 @@
+.slick-prev:before, .slick-next:before {
+
+    color: gray !important;
+    font-size: 3rem !important;
+}
+.gridRow{
+    width:25%;
+}
+
+.width-item {
+    width: 100%  !important;
+}
+.yactive{
+ 
+}
+.nactive{
+  
+}
+.active_Film {
+   border-bottom: 3px solid #fb4226 !important;
+   color:#fb4226 !important
+}
+
+
+.none_active_Film {
+    
+}
+.button-show-film {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.button-show-film button {
+    font-size:25px;
+    font-weight:800;
+    margin:30px 60px;
+    border: 3px solid;
+    background-color:#fff;
+    border:none;
+}
+.slick-next {
+    right: 1px;
+}
+@media screen and (max-width: 768px){
+    .button-show-film button{
+    margin:6px 25px;
+        font-size: 16px ;
+    }
+}

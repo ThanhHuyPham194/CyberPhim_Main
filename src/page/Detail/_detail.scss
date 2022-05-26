@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+}
+
+.detail {
+    font-family: sans-serif;
+    text-align: center;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &_info {
+        padding-top: 100px;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        margin-top: 100px;
+        &_card {
+            width: 70%;
+            @include max(767px){
+                display:block !important;
+            }
+            @include max(567px){
+                width:100%;
+            }
+            img {
+                border-radius: 5px;
+                width: 215px;
+                height: 320px;
+                @include max(767px){
+                    margin: auto;
+                }
+            }
+
+            &_title {
+                margin-left: 80px;
+                font-size: 18px;
+                margin-top: 80px;
+
+                p {
+                    color: #fff;
+                    font-size: 18px;
+
+                    &:first-child {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &_button {
+                background-color: $primary-color;
+                padding: 10px 40px;
+                border-radius: 10px;
+                color: #fff !important;
+
+                &:hover {
+                    background-color: $color-1;
+                }
+            }
+        }
+
+        &_rating {
+            width: 30%;
+            text-align: center;
+            @include max(567px){
+                display:none;
+            }
+            &_star {
+                font-size: 25px;
+                color: yellow;
+
+                i {
+                    padding: 5px;
+                    @include max(767px){
+                        padding: 1px;
+                    }
+                }
+            }
+
+            .circle-wrap {
+                margin: 15px auto;
+                width: 150px;
+                height: 150px;
+                background: #e6e2e7;
+                border-radius: 50%;
+            }
+
+            .circle-wrap .circle .mask,
+            .circle-wrap .circle .fill {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            .circle-wrap .circle .mask {
+                clip: rect(0px, 150px, 150px, 75px);
+            }
+
+            .circle-wrap .circle .mask .fill {
+                clip: rect(0px, 75px, 150px, 0px);
+                background-color: #17f31e;
+            }
+
+            .circle-wrap .circle .mask.full,
+            .circle-wrap .circle .fill {
+                animation: fill ease-in-out 3s;
+                transform: rotate(150deg);
+            }
+
+            @keyframes fill {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(150deg);
+                }
+            }
+
+            .circle-wrap .inside-circle {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                background: #fff;
+                line-height: 130px;
+                text-align: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                position: absolute;
+                z-index: 100;
+                font-weight: 700;
+                font-size: 2em;
+            }
+        }
+
+        &_tabs {
+            margin-top: 50px;
+
+            &_time {
+                background-color: #fff;
+
+                .ant-tabs-tab {
+                    margin: 0 !important;
+                }
+
+                .ant-tabs-tab {
+                    font-size: 14px !important;
+                }
+
+                &_addrea {
+                    padding-left: 20px;
+
+                    p:first-child {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+
+                &_row {
+                    width: 95%;
+
+                    &_col {
+                        color: green;
+                        background-color: #e0e0e0;
+                        width: 80%;
+                        margin: 5px 10px;
+                        padding: 5px 0;
+                        text-align: center;
+                        font-weight: bold;
+                        border-radius: 10px;
+
+                        span {
+                            color: red;
+                        }
+
+                        &:hover {
+                            background-color: $primary-color;
+                            color: greenyellow !important;
+
+                            span {
+                                color: greenyellow !important;
+                            }
+                        }
+                    }
+                }
+
+                &_no {
+                    h5 {
+                        color: red;
+                    }
+                }
+            }
+
+            .ant-tabs {
+                height: auto;
+            }
+
+            .ant-tabs-content {
+                margin-top: -16px;
+            }
+
+            .ant-tabs>.ant-tabs-nav,
+            .ant-tabs>div>.ant-tabs-nav {
+                border: none;
+                margin-bottom: 40px;
+            }
+
+            .ant-tabs-tab {
+                font-size: 30px;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+                color: $primary-color !important;
+            }
+
+            .ant-tabs-ink-bar {
+                display: none;
+            }
+
+            .ant-tabs-top>.ant-tabs-nav::before,
+            .ant-tabs-bottom>.ant-tabs-nav::before,
+            .ant-tabs-top>div>.ant-tabs-nav::before,
+            .ant-tabs-bottom>div>.ant-tabs-nav::before {
+                border: none;
+            }
+
+        }
+    }
+
+}
+.detail_info_tabs{
+    .ant-tabs {
+        height: auto;
+        border-radius: 10px;
+    } 
+} 

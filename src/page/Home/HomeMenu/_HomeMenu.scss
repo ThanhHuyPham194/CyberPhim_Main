@@ -1,0 +1,107 @@
+
+
+.ant-tabs-left>.ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-right>.ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-left>div>.ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-right>div>.ant-tabs-nav .ant-tabs-tab {
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.info-cumrap {
+    width: 200px;
+    text-align: left;
+
+    h4 {
+        font-size: 14px;
+        color: #108f3e;
+        overflow: hidden;
+    }
+
+    h6 {
+        font-size: 12px;
+        color: #757575;
+        overflow: hidden;
+    }
+
+    a {
+        color: red !important;
+        font-weight: bold !important;
+        &:hover{
+            color:yellowgreen !important;
+        }
+    }
+}
+.ant-tabs-content-holder .ant-tabs-content-holder{
+    width: 540px;
+    border: 1px solid #e0e0e0;
+    flex-grow: 1;
+    overflow-y: scroll;
+    border-left: none;
+}
+.ant-tabs {
+    margin-bottom: 90px !important;
+    height: 500px;
+}
+.ant-tabs-nav{
+    border:1px solid #f0f0f0;
+}
+.tab-film {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    img {
+        width: 100px;
+        height: 125px;
+    }
+
+    &-info {
+        width:555px;
+        padding: 0 20px;
+        h2 {
+            line-height: 22px;
+            margin-bottom: 8px;
+            font-size: 18px;
+            span{
+                padding:0 5px;
+                margin-right: 3px;
+                color: #fff;
+                background-color:$primary-color;
+                border-radius:5px;
+            }
+        }
+        &-time{
+            display:flex;
+            flex-wrap: wrap;
+            
+            &-day{
+                color: green;
+            }
+            a{
+                color: #9e9e9e;
+                width: 45%;
+                border: 1px solid #e4e4e4;
+                cursor: pointer;
+                margin: 0px 16px 16px 0px;
+                padding: 8px;
+                border-radius: 4px;
+                text-decoration: none;
+                background-color: rgba(246, 246, 246, 0.5);
+                text-align: center;
+                font-size:16px;
+                font-weight: bold;
+                &:hover{
+                background-color: $primary-color;
+                span{
+                    color: yellowgreen !important;
+                }
+                }
+            }
+        }
+    }
+}
+.he_thong_rap_chieu_film{
+    @include max($desktop-width){
+        display:none;
+      }
+}

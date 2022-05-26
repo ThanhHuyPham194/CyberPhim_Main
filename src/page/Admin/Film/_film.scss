@@ -1,0 +1,18 @@
+
+.list-movie{
+    .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button ,
+    .ant-pagination-disabled .ant-pagination-item-link, .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link,
+    button {
+        margin:0;
+        &:hover{
+            background-color:$primary-color;
+            color:white;
+        }
+    }
+    .anticon svg{
+        font-size:20px;
+        border: none;
+    }
+   
+}
+

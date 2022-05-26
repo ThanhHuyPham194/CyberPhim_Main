@@ -1,0 +1,27 @@
+
+@import "@fontsource/roboto";
+* {
+    margin: 0;
+    padding: 0 ;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;    
+    text-decoration: none !important;
+    
+}
+
+
+body{
+    font-family: "Roboto";
+    padding: 0 !important;
+    overflow: auto !important;
+}
+button{
+    &:hover,&:focus{
+        outline:none !important;
+    }
+}
+
+input[type="file"]{
+    display:none;
+}

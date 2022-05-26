@@ -1,0 +1,25 @@
+@import '../src/scss/Helper/variable';
+@import '../src/scss/Helper/mixin.scss';
+
+@import '../src/scss/Reset/reset';
+
+@import '../src/component/Loading/loading';
+@import '../src/templates/HomeTemplates/Layout/Header/header';
+@import '../src/templates/HomeTemplates/Layout/HomeCarousel/homeCarousel';
+@import '../src/component/Film/film';
+@import '../src/page/Home/HomeMenu/HomeMenu';
+@import '../src/page/Detail/detail';
+@import '../src/page/Checkout/checkout';
+@import '../src/page/Admin/Film/film';
+@import '../src/page/Admin//User/user';
+
+
+
+
+
+@import '../src/page/Login/login';
+
+@import '../src/page/New/_New.scss';
+@import '../src/page/Contact/contact';
+
+@import '../src/templates/HomeTemplates/Layout/Footer/footer';
