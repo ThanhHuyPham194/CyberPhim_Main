@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     @include max(567px){
-      height: 55px;
+      // height: 55px;
 
   }
     .navbar-brand{
@@ -526,3 +526,6 @@ color: #fff;}
       background-color: $primary-color !important;
       color: #fff !important;
     }
+  .mobile_menu{
+    margin-right: 20px;
+  }

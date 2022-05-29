@@ -16,6 +16,20 @@
 }
  
 #carousel{
-    margin-top: 120px !important;
-    margin-bottom: 100px !important;
+    @include max($desktop-width) {
+        margin-top: 120px !important;
+        margin-bottom: 100px !important;
+    };
+    @include addRes (481px,$tablet-width){
+        @media screen and (min-width:481px ) and (max-width:$tablet-width ){
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+      }   ;
+    @include max($mobile-width) {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    };
+
+
 }

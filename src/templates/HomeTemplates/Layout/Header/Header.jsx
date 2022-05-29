@@ -150,7 +150,7 @@ export default function Header(props) {
                 alt="Logo"
               />
             </NavLink>
-            <div>
+            <div className="mobile_menu">
               <div className="sec-center">
                 <input
                   className="dropdown"
