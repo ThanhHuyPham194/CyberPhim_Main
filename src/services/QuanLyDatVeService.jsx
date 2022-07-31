@@ -1,4 +1,4 @@
-import { BaseService } from "./BaseService";
+  import { BaseService } from "./BaseService";
 import {ThongTinDatVe} from '../../src/_core/models/ThongTinDatVe'
 
 export class QuanLydatVeServices extends BaseService {
